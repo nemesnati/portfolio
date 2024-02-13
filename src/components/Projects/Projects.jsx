@@ -66,6 +66,14 @@ function Projects() {
                     </Typography>
                 </CardContent>
         </Card>
+        <Card>
+            <CardMedia/>
+                <CardContent>
+                    <Typography>
+
+                    </Typography>
+                </CardContent>
+        </Card>
         
         </>
     )
