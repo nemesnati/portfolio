@@ -23,5 +23,21 @@
   width: auto;
 }
 
+.projects{
+  background:rgb(115, 45, 246) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+.contact{
+  background:rgb(79, 79, 79) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+  width: auto;
+}
+
 
 

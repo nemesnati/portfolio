@@ -39,7 +39,7 @@ const aStyle = {
             <a href="#projects" style={aStyle}>.Projects</a>
           </li>
           <li>
-            <a href="#about" style={aStyle}>.Contact</a>
+            <a href="#contact" style={aStyle}>.Contact</a>
           </li>
         </ul>
     </nav>

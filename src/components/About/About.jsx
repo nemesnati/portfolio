@@ -11,10 +11,10 @@ const aboutStyles = {
     justifyContent: "space-around",
 }
  const imgStyles = {
-   height: "450px",
-   width: "auto",
-   borderRadius: "10px",
-
+   maxHeight: "450px",
+   maxWidth: "700px",
+   boxShadow: "0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12)",
+   borderRadius: '4px',
  }
  const h1Styles = {
   fontSize: "150px",
@@ -54,7 +54,7 @@ const h3Style = {
     <>
     <h1 style={h1Styles} id='about'>.About</h1>
       <div style={aboutStyles} >
-        <img src={me} style={imgStyles}/>
+        <img src={me} alt='profile picture' style={imgStyles}/>
         <Card variant='outlined' sx={{
           height: 450,
           maxWidth: 500, 
@@ -63,7 +63,8 @@ const h3Style = {
           display: "flex",
           alignItems: "center",
           padding: 2}}>
-          <h2 style={h2Styles}>I'm a frontend developer driven by a passion for creativity and design. With expertise in HTML, CSS, and JavaScript, I'm dedicated to crafting visually stunning and user-friendly interfaces. I believe in starting each project with the question: "What would I love, if it were on a website?"This approach ensures that every element I create resonates with users and adds value to their browsing experience.
+          <h2 style={h2Styles}>I'm a frontend developer driven by a passion for <strong>creativity and design.</strong> With expertise in <strong>HTML, CSS, JavaScript and React</strong>, I'm dedicated to crafting visually stunning and user-friendly interfaces.
+          <br></br> I believe in starting each project with the question: <strong>"What would I love, if it were on a website?"</strong> This approach ensures that every element I create resonates with users and adds value to their browsing experience.
           </h2>
       </Card>
     </div>
