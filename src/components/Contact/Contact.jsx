@@ -26,7 +26,7 @@ function Contact() {
         width: "fit-content",
         fontSize: "80px",
         fontFamily: "roboto",
-        fontWeight: 200,
+        fontWeight: 400,
         fontStyle: "normal",
         marginLeft: "20px",
       

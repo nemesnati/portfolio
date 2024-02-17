@@ -1,18 +1,16 @@
 import React from 'react'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 function Welcome() {
 
 const h1Style = {
   position: "relative",
   width: "fit-content",
-  fontSize: "150px",
+  fontSize: "clamp(70px, 11vw, 190px)",
   fontFamily: "roboto",
   fontWeight: 400,
   fontStyle: "normal",
   marginLeft: "20px",
-  top: "150px",
-
+  top: "14rem",
   color: "white",
 }
 

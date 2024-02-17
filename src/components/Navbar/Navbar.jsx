@@ -8,6 +8,11 @@ const navbarStyle ={
   paddingTop: "25px",
   paddingRight: "25px",
 }
+const logoStyle = {
+  maxWidth: '12em',
+  maxHeight: '8em',
+  marginLeft: '1.5em'
+}
 
 const liStyle = {
   display:"flex",
@@ -19,7 +24,7 @@ const liStyle = {
 
 const aStyle = {
   color: "white",
-  fontSize: "60px",
+  fontSize: "clamp(5px, 7vw, 60px)",
   fontFamily: "montserrat",
   fontWeight: 200,
   fontStyle: "normal",
@@ -30,7 +35,7 @@ const aStyle = {
   return (
     <>
     <nav style={navbarStyle}>
-    <img src={logo}width={225} height={225}/>
+    <img src={logo} style={logoStyle}/>
         <ul style={liStyle}>
           <li >
             <a href="#about" style={aStyle}>.About</a>

@@ -6,37 +6,36 @@
   box-sizing: border-box;
 }
 
-
 .welcome{
   background:rgb(115, 45, 246) ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: auto;
+  min-height: 100vh;
+  min-width: 100vw; 
 }
 
 .about{
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: auto;
+  min-height: 100vh;
+  min-width: 100vw; 
 }
 
 .projects{
   background:rgb(115, 45, 246) ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: auto;
+  min-height: 100vh;
+  min-width: 100vw; 
 }
 
 .contact{
   background:rgb(79, 79, 79) ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 25vh;
-  width: auto;
+  /* max-height: 25vh; */
+  min-width: 100vw; 
 }
 
 

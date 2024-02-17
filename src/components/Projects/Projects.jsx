@@ -1,12 +1,13 @@
-import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
+import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { useMediaQuery } from '@mui/material';
+
 
 function Projects() {
 
+
     const h1Style = {
-        position: "relative",
-        width: "fit-content",
-        fontSize: "150px",
+        fontSize: "clamp(70px, 10vw, 220px)",
         fontFamily: "roboto",
         fontWeight: 400,
         fontStyle: "normal",
@@ -16,25 +17,68 @@ function Projects() {
       }
 
       const h2Styles = {
-        fontSize: "25px",
+        fontSize: "clamp(10px, 4vw, 28px)",
         fontFamily: "montserrat",
         fontWeight: 200,
         color: "rgb(115, 45, 246)",
         textAlign: "left"
     }
+    const project = {  
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "center",
+        padding: 20,
+        gap: "5em"
+    }
+
+    const projectCards = {
+       display: "flex",
+       flexWrap: "wrap",
+       flexDirection: "row",
+       justifyContent: "space-evenly",
+       gap: "1em",
+    }
+
+    const fontStyle = {
+        fontFamily: "roboto",
+        fontWeight: 600,
+        fontSize: 15,
+        color: "rgb(115, 45, 246)",
+    }
+
+    const fontParaStyle = {
+        fontFamily: "montserrat",
+        color: "rgb(115, 45, 246)",
+    }
+
+    const spaceLink = () => {
+        window.open('https://nemesnati.github.io/space_invaders_clone/');
+    }
+    const burgerLink = () => {
+        window.open('https://nemesnati.github.io/burger_webshop_frontend_only/');
+    }
+    const rickLink = () => {
+        window.open('https://nemesnati.github.io/rickandmorty/');
+    }
+    // const spaceLink = () => {
+    //     window.open('https://github.com/nemesnati/space_invaders_clone');
+    // }
+
+
 
     return (
         <>
         <h1 style={h1Style} id='projects'>.Projects</h1>
+        <div style={project}>
         <Card variant='outlined' sx={{
-          height: "auto",
-          maxWidth: 700, 
-          border: 0 ,
+          maxHeight: 650,
+          maxWidth: "96rem", 
           boxShadow: 5 ,
-          display: "flex",
-          justifyContent: "flex-end",
           alignItems: "center",
-          padding: 2}}>
+          padding: 2, 
+          margin: "2.5em"}}>
         <h2 style={h2Styles}>
         I embarked on an exciting journey to enhance my skills as a frontend developer by attending a frontend bootcamp. I immersed myself in <strong>an intensive learning environment.</strong> <br></br>
         One of the highlights of the bootcamp was <strong>collaborating with fellow developers on real-world projects</strong>, allowing me to apply my newfound knowledge to <strong>solve complex challenges</strong> and deliver impactful solutions.
@@ -42,40 +86,70 @@ function Projects() {
         It not only equipped me with technical skills but also instilled in me <strong>a strong foundation in problem-solving, collaboration, and continuous learning.</strong>  It was a transformative experience that prepared me for a successful career in frontend development.
         </h2>
         </Card>
-        <Card>
-            <CardMedia/>
+        <div style={projectCards}>
+        <Card sx={{ maxWidth: 440 , height: 300, boxShadow: 5}}>
+            <CardMedia component="img"
+        alt="space invader"
+        height="140"
+        image="/src/assets/space_invader.png"/>
                 <CardContent>
-                    <Typography>
-                
+                    <Typography style={fontStyle}>
+                SPACE INVADER
+                    </Typography>
+                    <Typography style={fontParaStyle}>
+                    I wanted to get into game development and when I was little i really enjoyed playing this game. <br></br>
+                    <Button onClick={spaceLink}>GITHUB PAGE</Button>
                     </Typography>
                  </CardContent>
        </Card>
-        <Card>
-             <CardMedia/>
+        <Card sx={{ maxWidth: 440 ,height: 300, boxShadow: 5}}>
+             <CardMedia component="img"
+        alt="burger land"
+        height="140"
+        image="/src/assets/burgerland.png"/>
                  <CardContent>
-                   <Typography>
-
+                    <Typography style={fontStyle}>
+                        BURGER LAND - TEAM WEBSHOP PROJECT
+                    </Typography>
+                   <Typography style={fontParaStyle}>
+                   This was a team project, that I recrated to be frontend only, it has a backend version on my github<br></br>
+                    <Button onClick={burgerLink}>GITHUB PAGE</Button>
                    </Typography>
                  </CardContent>
        </Card>
-        <Card>
-            <CardMedia/>
+        <Card sx={{ maxWidth: 440, height: 300, boxShadow: 5 }}>
+            <CardMedia component="img"
+        alt="space invader"
+        height="140"
+        image="/src/assets/rickandmorty.png"/>
                 <CardContent>
-                    <Typography>
-
+                <Typography style={fontStyle}>
+                    RICK AND MORTY DATABASE
+                </Typography>
+                    <Typography style={fontParaStyle}>
+                    I used the rick and morty RESTApi for this project. It collects the character data and gives information about the characters.<br></br>
+                    <Button onClick={rickLink}>GITHUB PAGE</Button>
                     </Typography>
                 </CardContent>
         </Card>
-        <Card>
-            <CardMedia/>
+        <Card sx={{ maxWidth: 440, height: 300,boxShadow: 5 }}>
+            <CardMedia component="img"
+        alt="space invader"
+        height="140"
+        image="/src/assets/burgerland.png"/>
                 <CardContent>
-                    <Typography>
-
+                    <Typography style={fontStyle}>
+                        Még nem dontottem el
+                    </Typography>
+                    <Typography style={fontParaStyle}>
+                    I wanted to get into game development and when I was little i really enjoyed playing this game. <br></br>
+                    <Button>GITHUB PAGE</Button>
                     </Typography>
                 </CardContent>
         </Card>
-        
-        </>
+        </div>
+    </div>
+</>
     )
 }
 

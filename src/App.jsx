@@ -11,17 +11,20 @@ import figma from './assets/figma.png'
 import html from './assets/html.png'
 import js from './assets/js.png'
 import react from './assets/react.png'
+import firebase from './assets/firebase.png'
+import sass from './assets/sass.svg'
+import postman from './assets/postman.svg'
 
 function App() {
 
   return (
     <>
     <div className={style.welcome} >
-     <Navbar logo={logo}/>
+     <Navbar logo={logo} />
      <Welcome/>
     </div>
     <div className={style.about}>
-     <About me={me} css={css} figma={figma} html={html} js={js} react={react}/>
+     <About me={me} css={css} figma={figma} html={html} js={js} react={react} firebase={firebase} sass={sass} postman={postman}/>
     </div>
     <div className={style.projects}>
     <Projects/>
