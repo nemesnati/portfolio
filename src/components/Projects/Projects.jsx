@@ -87,11 +87,11 @@ function Projects() {
         </h2>
         </Card>
         <div style={projectCards}>
-        <Card sx={{ maxWidth: 440 , height: 300, boxShadow: 5}}>
+        <Card sx={{ maxWidth: 440 , height: 350, boxShadow: 5}}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
-        image="/src/assets/space_invader.png"/>
+        image="src/assets/space_invader.png"/>
                 <CardContent>
                     <Typography style={fontStyle}>
                 SPACE INVADER
@@ -102,11 +102,11 @@ function Projects() {
                     </Typography>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440 ,height: 300, boxShadow: 5}}>
+        <Card sx={{ maxWidth: 440 ,height: 350, boxShadow: 5}}>
              <CardMedia component="img"
         alt="burger land"
         height="140"
-        image="/src/assets/burgerland.png"/>
+        image="src/assets/burgerland.png"/>
                  <CardContent>
                     <Typography style={fontStyle}>
                         BURGER LAND - TEAM WEBSHOP PROJECT
@@ -117,11 +117,11 @@ function Projects() {
                    </Typography>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440, height: 300, boxShadow: 5 }}>
+        <Card sx={{ maxWidth: 440, height: 350, boxShadow: 5 }}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
-        image="/src/assets/rickandmorty.png"/>
+        image="src/assets/rickandmorty.png"/>
                 <CardContent>
                 <Typography style={fontStyle}>
                     RICK AND MORTY DATABASE
@@ -132,11 +132,11 @@ function Projects() {
                     </Typography>
                 </CardContent>
         </Card>
-        <Card sx={{ maxWidth: 440, height: 300,boxShadow: 5 }}>
+        <Card sx={{ maxWidth: 440, height: 350,boxShadow: 5 }}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
-        image="/src/assets/burgerland.png"/>
+        image="src/assets/burgerland.png"/>
                 <CardContent>
                     <Typography style={fontStyle}>
                         Még nem dontottem el
