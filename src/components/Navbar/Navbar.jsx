@@ -5,8 +5,8 @@ export const Navbar = ({logo}) => {
 const navbarStyle ={
   display: "flex",
   justifyContent:"space-between",
-  paddingTop: "25px",
   paddingRight: "25px",
+  marginBottom: '10em'
 }
 const logoStyle = {
   maxWidth: '12em',
