@@ -32,7 +32,7 @@ const aboutStyles = {
 const h2Styles = {
     fontSize: "clamp(10px, 4vw, 28px)",
     fontFamily: "montserrat",
-    fontWeight: 200,
+    fontWeight: 300,
     color: "rgb(115, 45, 246)",
     textAlign: "left"
 }

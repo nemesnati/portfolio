@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
 import { useMediaQuery } from '@mui/material';
 
 
@@ -19,7 +19,7 @@ function Projects() {
       const h2Styles = {
         fontSize: "clamp(10px, 4vw, 28px)",
         fontFamily: "montserrat",
-        fontWeight: 200,
+        fontWeight: 300,
         color: "rgb(115, 45, 246)",
         textAlign: "left"
     }
@@ -42,16 +42,19 @@ function Projects() {
     }
 
     const fontStyle = {
+        fontSize: "clamp(5px, 7vw, 20px)",
         fontFamily: "roboto",
         fontWeight: 600,
-        fontSize: 15,
         color: "rgb(115, 45, 246)",
     }
 
     const fontParaStyle = {
+        fontSize: "clamp(2px, 5vw, 20px)",
         fontFamily: "montserrat",
+        fontWeight: 400,
         color: "rgb(115, 45, 246)",
     }
+
 
     const spaceLink = () => {
         window.open('https://nemesnati.github.io/space_invaders_clone/');
@@ -87,22 +90,24 @@ function Projects() {
         </h2>
         </Card>
         <div style={projectCards}>
-        <Card sx={{ maxWidth: 440 , height: 350, boxShadow: 5}}>
+        <Card sx={{ maxWidth: 440 , maxHeight: "fit-content", boxShadow: 5}}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
         image="src/assets/space_invader.png"/>
                 <CardContent>
                     <Typography style={fontStyle}>
-                SPACE INVADER
+                        SPACE INVADER
                     </Typography>
                     <Typography style={fontParaStyle}>
                     I wanted to get into game development and when I was little i really enjoyed playing this game. <br></br>
-                    <Button onClick={spaceLink}>GITHUB PAGE</Button>
                     </Typography>
+                    <CardActions>
+                         <Button onClick={spaceLink}>GITHUB PAGE</Button>
+                    </CardActions>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440 ,height: 350, boxShadow: 5}}>
+        <Card sx={{ maxWidth: 440 ,height: 370, boxShadow: 5}}>
              <CardMedia component="img"
         alt="burger land"
         height="140"
@@ -113,13 +118,15 @@ function Projects() {
                     </Typography>
                    <Typography style={fontParaStyle}>
                    This was a team project, that I recrated to be frontend only, it has a backend version on my github<br></br>
-                    <Button onClick={burgerLink}>GITHUB PAGE</Button>
                    </Typography>
+                   <CardActions>
+                     <Button onClick={burgerLink}>GITHUB PAGE</Button>
+                   </CardActions>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440, height: 350, boxShadow: 5 }}>
+        <Card sx={{ maxWidth: 440, height: 370, boxShadow: 5 }}>
             <CardMedia component="img"
-        alt="space invader"
+        alt="rick and morty"
         height="140"
         image="src/assets/rickandmorty.png"/>
                 <CardContent>
@@ -128,11 +135,13 @@ function Projects() {
                 </Typography>
                     <Typography style={fontParaStyle}>
                     I used the rick and morty RESTApi for this project. It collects the character data and gives information about the characters.<br></br>
-                    <Button onClick={rickLink}>GITHUB PAGE</Button>
                     </Typography>
+                    <CardActions>
+                     <Button onClick={rickLink}>GITHUB PAGE</Button>
+                    </CardActions>
                 </CardContent>
         </Card>
-        <Card sx={{ maxWidth: 440, height: 350,boxShadow: 5 }}>
+        <Card sx={{ maxWidth: 440, height: 370,boxShadow: 5 }}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
@@ -143,8 +152,10 @@ function Projects() {
                     </Typography>
                     <Typography style={fontParaStyle}>
                     I wanted to get into game development and when I was little i really enjoyed playing this game. <br></br>
-                    <Button>GITHUB PAGE</Button>
                     </Typography>
+                    <CardActions>
+                        <Button>GITHUB PAGE</Button>
+                    </CardActions>
                 </CardContent>
         </Card>
         </div>
