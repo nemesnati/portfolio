@@ -10,7 +10,7 @@ const h1Style = {
   fontWeight: 400,
   fontStyle: "normal",
   marginLeft: "20px",
-  top: "14rem",
+  top: "10rem",
   color: "white",
 }
 
