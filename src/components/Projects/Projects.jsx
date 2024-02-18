@@ -1,13 +1,11 @@
 import React from 'react'
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
-import { useMediaQuery } from '@mui/material';
 
 
 function Projects() {
 
-
     const h1Style = {
-        fontSize: "clamp(50px, 10vw, 220px)",
+        fontSize: "clamp(55px, 9vw, 200px)",
         fontFamily: "roboto",
         fontWeight: 400,
         fontStyle: "normal",
@@ -17,7 +15,7 @@ function Projects() {
       }
 
       const h2Styles = {
-        fontSize: "clamp(10px, 4vw, 30px)",
+        fontSize: "clamp(20px, 4vw, 30px)",
         fontFamily: "montserrat",
         fontWeight: 300,
         color: "rgb(115, 45, 246)",
@@ -77,11 +75,11 @@ function Projects() {
         <div style={project}>
         <Card variant='outlined' sx={{
           maxHeight: "fit-content",
-          maxWidth: "98rem", 
-          boxShadow: 5 ,
+          maxWidth: "100rem", 
+          boxShadow: 10,
           alignItems: "center",
           padding: 2, 
-          margin: "2em",
+          margin: "1em",
           backgroundColor: "#f0efed"}}>
         <h2 style={h2Styles}>
         I embarked on an exciting journey to enhance my skills as a frontend developer by attending a frontend bootcamp. I immersed myself in <strong>an intensive learning environment.</strong> <br></br>

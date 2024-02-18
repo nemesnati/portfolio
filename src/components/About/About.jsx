@@ -31,7 +31,7 @@ const aboutStyles = {
 }
 
 const h2Styles = {
-    fontSize: "clamp(10px, 4vw, 28px)",
+    fontSize: "clamp(20px, 4vw, 28px)",
     fontFamily: "montserrat",
     fontWeight: 300,
     color: "rgb(115, 45, 246)",
@@ -53,7 +53,7 @@ const skillStyle = {
 }
 
 const h3Style = {
-    fontSize: "clamp(8px, 4vw, 40px)",
+    fontSize: "clamp(20px, 4vw, 40px)",
     fontFamily: "montserrat",
     fontWeight: 400,
     color: "rgb(115, 45, 246)",

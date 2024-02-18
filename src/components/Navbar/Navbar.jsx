@@ -5,7 +5,7 @@ export const Navbar = ({logo}) => {
 const navbarStyle ={
   display: "flex",
   justifyContent:"space-between",
-  paddingRight: "25px",
+  paddingRight: "0.5em",
   marginBottom: '10em'
 }
 const logoStyle = {
@@ -24,7 +24,7 @@ const liStyle = {
 
 const aStyle = {
   color: "white",
-  fontSize: "clamp(5px, 7vw, 60px)",
+  fontSize: "clamp(15px, 8vw, 60px)",
   fontFamily: "montserrat",
   fontWeight: 200,
   fontStyle: "normal",
