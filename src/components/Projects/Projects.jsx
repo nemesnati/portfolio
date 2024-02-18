@@ -65,9 +65,9 @@ function Projects() {
     const rickLink = () => {
         window.open('https://nemesnati.github.io/rickandmorty/');
     }
-    // const spaceLink = () => {
-    //     window.open('https://github.com/nemesnati/space_invaders_clone');
-    // }
+    const memoryLink = () => {
+        window.open('https://nemesnati.github.io/memory-game/');
+    }
 
 
 
@@ -101,14 +101,14 @@ function Projects() {
                         SPACE INVADER
                     </Typography>
                     <Typography style={fontParaStyle}>
-                    I wanted to get into game development and when I was little i really enjoyed playing this game. <br></br>
+                    I wanted to get into game development and remembered this game from when i was little and thought i would give it a try. It was a bit challenging but i learnt a lot from it! <br></br>
                     </Typography>
                     <CardActions>
                          <Button onClick={spaceLink}>GITHUB PAGE</Button>
                     </CardActions>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440 ,height: 370, boxShadow: 5,padding: '0em',backgroundColor: "#f0efed"}}>
+        <Card sx={{ maxWidth: 440 ,maxHeight: "fit-content", boxShadow: 5,padding: '0em',backgroundColor: "#f0efed"}}>
              <CardMedia component="img"
         alt="burger land"
         height="140"
@@ -118,14 +118,14 @@ function Projects() {
                         BURGER LAND - TEAM WEBSHOP PROJECT
                     </Typography>
                    <Typography style={fontParaStyle}>
-                   This was a team project, that I recrated to be frontend only, it has a backend version on my github<br></br>
+                   This was a team project on my frontend course that we did, but it was originally built with backend, so I recreated it to be frontend only. <br></br>This project helped me learn a lot about responsive design.<br></br> (backend version on my github)
                    </Typography>
                    <CardActions>
                      <Button onClick={burgerLink}>GITHUB PAGE</Button>
                    </CardActions>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440, height: 370, boxShadow: 5, padding: '0em',backgroundColor: "#f0efed" }}>
+        <Card sx={{ maxWidth: 440, maxHeight: "fit-content", boxShadow: 5, padding: '0em',backgroundColor: "#f0efed" }}>
             <CardMedia component="img"
         alt="rick and morty"
         height="140"
@@ -135,27 +135,27 @@ function Projects() {
                     RICK AND MORTY DATABASE
                 </Typography>
                     <Typography style={fontParaStyle}>
-                    I used the rick and morty RESTApi for this project. It collects the character data and gives information about the characters.<br></br>
+                    I used the Rick and Morty RESTApi for this project. It collects the characters data and gives informations about the characters in detail, kind of like in a detective data style.
                     </Typography>
                     <CardActions>
                      <Button onClick={rickLink}>GITHUB PAGE</Button>
                     </CardActions>
                 </CardContent>
         </Card>
-        <Card sx={{ maxWidth: 440, height: 370,boxShadow: 5, padding: '0em',backgroundColor: "#f0efed" }}>
+        <Card sx={{ maxWidth: 440, maxHeight: "fit-content",boxShadow: 5, padding: '0em',backgroundColor: "#f0efed" }}>
             <CardMedia component="img"
-        alt="space invader"
+        alt="memory game"
         height="140"
-        image="src/assets/burgerland.png"/>
+        image="src/assets/memory.png"/>
                 <CardContent>
                     <Typography style={fontStyle}>
-                        Még nem dontottem el
+                        MEMORY GAME
                     </Typography>
                     <Typography style={fontParaStyle}>
-                    I wanted to get into game development and when I was little i really enjoyed playing this game. <br></br>
+                    I had a really fun time putting this together. I had difficulties with flips in the beginning, but than i got the hang of it and succeeded. I learned a lot of patience during this project.
                     </Typography>
                     <CardActions>
-                        <Button>GITHUB PAGE</Button>
+                        <Button onClick={memoryLink}>GITHUB PAGE</Button>
                     </CardActions>
                 </CardContent>
         </Card>
