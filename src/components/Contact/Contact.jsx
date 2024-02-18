@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
-function Contact() {
+function Contact({cv}) {
     const aStyle = {
         color: "white",
         fontSize: "60px",
@@ -24,7 +24,7 @@ function Contact() {
       const h1Style = {
         position: "relative",
         width: "fit-content",
-        fontSize: "80px",
+        fontSize: "clamp(5px, 8vw, 80px)",
         fontFamily: "roboto",
         fontWeight: 400,
         fontStyle: "normal",
@@ -41,28 +41,38 @@ function Contact() {
         gap: "20px",
       }
 
+      const cvStyle = {
+        maxHeight: 60,
+        maxWidth: 50
+      }
+
   return (
     <>
 <h1 style={h1Style} id='contact'>.Contact</h1>
             <ul style={ulStyle}>
                 <li style={liStyle}>
                   <a href="mailto:nemes.nati86@gmail.com" style={aStyle}>
-                       <EmailIcon alt="email" sx={{height: 50, width: 40}}/>
+                       <EmailIcon alt="email" sx={{maxHeight: 65, maxWidth: 55, fontSize: '2em'}}/>
                    </a>
                 </li>
                 <li style={liStyle}>
                     <a href="https://www.facebook.com/nemes.natalia.14/" style={aStyle}>
-                        <FacebookIcon alt="facebook"sx={{height: 50, width: 40}}/>
+                        <FacebookIcon alt="facebook"sx={{maxHeight: 65, maxWidth: 55, fontSize: '2em'}}/>
                     </a>
                 </li>
                 <li style={liStyle}>
                     <a href="https://www.linkedin.com/in/natália-nemes-476524292/" style={aStyle}>
-                        <LinkedInIcon alt="linked in"sx={{height: 50, width: 40}}/>
+                        <LinkedInIcon alt="linked in"sx={{maxHeight: 65, maxWidth: 55, fontSize: '2em'}}/>
                     </a>
                 </li>
                 <li style={liStyle}>
                     <a href="https://github.com/nemesnati" style={aStyle}>
-                        <GitHubIcon alt="github"sx={{height: 50, width: 40}}/>
+                        <GitHubIcon alt="github"sx={{maxHeight: 65, maxWidth: 55, fontSize: '2em'}}/>
+                    </a>
+                </li>
+                <li style={liStyle}>
+                    <a href="/portfolio/src/assets/Natália Nemes CV.pdf" style={aStyle}>
+                        <img src={cv} alt="cv" style={cvStyle}/>
                     </a>
                 </li>
             </ul>

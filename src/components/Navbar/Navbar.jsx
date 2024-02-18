@@ -6,7 +6,7 @@ const navbarStyle ={
   display: "flex",
   justifyContent:"space-between",
   paddingRight: "25px",
-  marginBottom: '12em'
+  marginBottom: '10em'
 }
 const logoStyle = {
   maxWidth: '12em',

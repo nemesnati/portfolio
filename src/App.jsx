@@ -14,6 +14,7 @@ import react from './assets/react.png'
 import firebase from './assets/firebase.png'
 import sass from './assets/sass.svg'
 import postman from './assets/postman.svg'
+import cv from './assets/cv.png'
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
     <Projects/>
     </div>
     <div className={style.contact}>
-      <Contact/>
+      <Contact cv={cv}/>
     </div>
     </>
   )

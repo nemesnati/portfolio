@@ -7,7 +7,7 @@ function Projects() {
 
 
     const h1Style = {
-        fontSize: "clamp(70px, 10vw, 220px)",
+        fontSize: "clamp(50px, 10vw, 220px)",
         fontFamily: "roboto",
         fontWeight: 400,
         fontStyle: "normal",
@@ -17,7 +17,7 @@ function Projects() {
       }
 
       const h2Styles = {
-        fontSize: "clamp(10px, 4vw, 28px)",
+        fontSize: "clamp(10px, 4vw, 30px)",
         fontFamily: "montserrat",
         fontWeight: 300,
         color: "rgb(115, 45, 246)",
@@ -30,7 +30,7 @@ function Projects() {
         justifyContent: "space-around",
         alignItems: "center",
         padding: 20,
-        gap: "5em"
+        gap: "5em",
     }
 
     const projectCards = {
@@ -76,12 +76,13 @@ function Projects() {
         <h1 style={h1Style} id='projects'>.Projects</h1>
         <div style={project}>
         <Card variant='outlined' sx={{
-          maxHeight: 650,
-          maxWidth: "96rem", 
+          maxHeight: "fit-content",
+          maxWidth: "98rem", 
           boxShadow: 5 ,
           alignItems: "center",
           padding: 2, 
-          margin: "2.5em"}}>
+          margin: "2em",
+          backgroundColor: "#f0efed"}}>
         <h2 style={h2Styles}>
         I embarked on an exciting journey to enhance my skills as a frontend developer by attending a frontend bootcamp. I immersed myself in <strong>an intensive learning environment.</strong> <br></br>
         One of the highlights of the bootcamp was <strong>collaborating with fellow developers on real-world projects</strong>, allowing me to apply my newfound knowledge to <strong>solve complex challenges</strong> and deliver impactful solutions.
@@ -90,7 +91,7 @@ function Projects() {
         </h2>
         </Card>
         <div style={projectCards}>
-        <Card sx={{ maxWidth: 440 , maxHeight: "fit-content", boxShadow: 5}}>
+        <Card sx={{ maxWidth: 440 , maxHeight: "fit-content", boxShadow: 5, padding: '0em',backgroundColor: "#f0efed"}}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
@@ -107,7 +108,7 @@ function Projects() {
                     </CardActions>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440 ,height: 370, boxShadow: 5}}>
+        <Card sx={{ maxWidth: 440 ,height: 370, boxShadow: 5,padding: '0em',backgroundColor: "#f0efed"}}>
              <CardMedia component="img"
         alt="burger land"
         height="140"
@@ -124,7 +125,7 @@ function Projects() {
                    </CardActions>
                  </CardContent>
        </Card>
-        <Card sx={{ maxWidth: 440, height: 370, boxShadow: 5 }}>
+        <Card sx={{ maxWidth: 440, height: 370, boxShadow: 5, padding: '0em',backgroundColor: "#f0efed" }}>
             <CardMedia component="img"
         alt="rick and morty"
         height="140"
@@ -141,7 +142,7 @@ function Projects() {
                     </CardActions>
                 </CardContent>
         </Card>
-        <Card sx={{ maxWidth: 440, height: 370,boxShadow: 5 }}>
+        <Card sx={{ maxWidth: 440, height: 370,boxShadow: 5, padding: '0em',backgroundColor: "#f0efed" }}>
             <CardMedia component="img"
         alt="space invader"
         height="140"
