@@ -93,7 +93,7 @@ function Projects() {
             <CardMedia component="img"
         alt="space invader"
         height="140"
-        image="src/assets/space_invader.png"/>
+        src="src/assets/space_invader.png"/>
                 <CardContent>
                     <Typography style={fontStyle}>
                         SPACE INVADER
@@ -110,7 +110,7 @@ function Projects() {
              <CardMedia component="img"
         alt="burger land"
         height="140"
-        image="src/assets/burgerland.png"/>
+        src="src/assets/burgerland.png"/>
                  <CardContent>
                     <Typography style={fontStyle}>
                         BURGER LAND - TEAM WEBSHOP PROJECT
@@ -127,7 +127,7 @@ function Projects() {
             <CardMedia component="img"
         alt="rick and morty"
         height="140"
-        image="src/assets/rickandmorty.png"/>
+        src="src/assets/rickandmorty.png"/>
                 <CardContent>
                 <Typography style={fontStyle}>
                     RICK AND MORTY DATABASE
@@ -144,7 +144,7 @@ function Projects() {
             <CardMedia component="img"
         alt="memory game"
         height="140"
-        image="src/assets/memory.png"/>
+        src="src/assets/memory.png"/>
                 <CardContent>
                     <Typography style={fontStyle}>
                         MEMORY GAME

@@ -72,7 +72,7 @@ function Contact({cv}) {
                     </a>
                 </li>
                 <li style={liStyle}>
-                    <a href="/portfolio/src/assets/Natália Nemes CV.pdf" style={aStyle}>
+                    <a href="/portfolio/src/assets/natalianemescv.pdf" style={aStyle}>
                         <img src={cv} alt="cv" style={cvStyle}/>
                     </a>
                 </li>
