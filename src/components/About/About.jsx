@@ -18,15 +18,15 @@ const aboutStyles = {
    maxWidth: "100% ",
    boxShadow: "0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12)",
    borderRadius: '4px',
-   padding: '1em',
-   backgroundColor: "#f0efed"
+   padding: '0.8em',
+   backgroundColor: "#f0efed",
  }
  const h1Styles = {
-  fontSize: "clamp(70px, 10vw, 220px)",
+  fontSize: "clamp(70px, 10vw, 170px)",
   fontFamily: "roboto",
   fontWeight: 400,
   fontStyle: "normal",
-  margin: "20px",
+  marginLeft: '0.1em',
   color: "rgb(115, 45, 246)",
 }
 
@@ -53,9 +53,9 @@ const skillStyle = {
 }
 
 const h3Style = {
-    fontSize: "clamp(20px, 4vw, 40px)",
+    fontSize: "clamp(23px, 4vw, 50px)",
     fontFamily: "montserrat",
-    fontWeight: 400,
+    fontWeight: 600,
     color: "rgb(115, 45, 246)",
     margin: "20px"
 }
@@ -72,7 +72,7 @@ const h3Style = {
           boxShadow: 5 ,
           display: "flex",
           alignItems: "center",
-          padding: 2,
+          padding: 3,
           margin: '1em', backgroundColor: "#f0efed"}}>
           <h2 style={h2Styles}>I'm a frontend developer driven by a passion for <strong>creativity and design.</strong> With expertise in <strong>HTML, CSS, JavaScript and React</strong>, I'm dedicated to crafting visually stunning and user-friendly interfaces.
           <br></br> I believe in starting each project with the question: <strong>"What would I love, if it were on a website?"</strong> This approach ensures that every element I create resonates with users and adds value to their browsing experience.

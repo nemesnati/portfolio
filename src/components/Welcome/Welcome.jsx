@@ -3,12 +3,14 @@ import React from 'react'
 function Welcome() {
 
 const h1Style = {
+  position: "absolute",
+  bottom: "2%",
   width: "fit-content",
-  fontSize: "clamp(70px, 11vw, 190px)",
+  fontSize: "clamp(70px, 9vw, 160px)",
   fontFamily: "roboto",
   fontWeight: 400,
   fontStyle: "normal",
-  marginLeft: "20px",
+  marginLeft: "0.2em",
   color: "white",
 
 }

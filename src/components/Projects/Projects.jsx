@@ -5,11 +5,11 @@ import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@
 function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
 
     const h1Style = {
-        fontSize: "clamp(55px, 9vw, 200px)",
+        fontSize: "clamp(60px, 10vw, 170px)",
         fontFamily: "roboto",
         fontWeight: 400,
         fontStyle: "normal",
-        marginLeft: "20px",
+        marginLeft: '0.1em',
       
         color: "white",
       }
@@ -27,7 +27,7 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
         flexDirection: "row",
         justifyContent: "space-around",
         alignItems: "center",
-        padding: 20,
+        padding: 18,
         gap: "5em",
     }
 
@@ -57,14 +57,27 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
     const spaceLink = () => {
         window.open('https://nemesnati.github.io/space_invaders_clone/');
     }
+    const spaceLinkGit = () => {
+        window.open('https://github.com/nemesnati/space_invaders_clone/');
+    }
+
     const burgerLink = () => {
         window.open('https://nemesnati.github.io/burger_webshop_frontend_only/');
+    }
+    const burgerLinkGit = () => {
+        window.open('https://github.com/nemesnati/burger_webshop_frontend_only/');
     }
     const rickLink = () => {
         window.open('https://nemesnati.github.io/rickandmorty/');
     }
+    const rickLinkGit = () => {
+        window.open('https://github.com/nemesnati/rickandmorty/');
+    }
     const memoryLink = () => {
         window.open('https://nemesnati.github.io/memory-game/');
+    }
+    const memoryLinkGit = () => {
+        window.open('https://github.com/nemesnati/memory-game/');
     }
 
 
@@ -75,10 +88,10 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
         <div style={project}>
         <Card variant='outlined' sx={{
           maxHeight: "fit-content",
-          maxWidth: "100rem", 
+          maxWidth: "75em", 
           boxShadow: 10,
           alignItems: "center",
-          padding: 2, 
+          padding: '2.5em', 
           margin: "1em",
           backgroundColor: "#f0efed"}}>
         <h2 style={h2Styles}>
@@ -102,7 +115,8 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
                     I wanted to get into game development and remembered this game from when i was little and thought i would give it a try. It was a bit challenging but i learnt a lot from it! <br></br>
                     </Typography>
                     <CardActions>
-                         <Button onClick={spaceLink}>GITHUB PAGE</Button>
+                         <Button variant='outlined' onClick={spaceLink}>LIVE DEMO</Button>
+                         <Button onClick={spaceLinkGit}>SOURCE CODE</Button>
                     </CardActions>
                  </CardContent>
        </Card>
@@ -119,7 +133,8 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
                    This was a team project on my frontend course that we did, but it was originally built with backend, so I recreated it to be frontend only. <br></br>This project helped me learn a lot about responsive design.<br></br> (backend version on my github)
                    </Typography>
                    <CardActions>
-                     <Button onClick={burgerLink}>GITHUB PAGE</Button>
+                     <Button variant="outlined" onClick={burgerLink}>LIVE DEMO</Button>
+                     <Button onClick={burgerLinkGit}>SOURCE CODE</Button>
                    </CardActions>
                  </CardContent>
        </Card>
@@ -136,7 +151,8 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
                     I used the Rick and Morty RESTApi for this project. It collects the characters data and gives informations about the characters in detail, kind of like in a detective data style.
                     </Typography>
                     <CardActions>
-                     <Button onClick={rickLink}>GITHUB PAGE</Button>
+                     <Button variant='outlined' onClick={rickLink}>LIVE DEMO</Button>
+                     <Button onClick={rickLinkGit}>SOURCE CODE</Button>
                     </CardActions>
                 </CardContent>
         </Card>
@@ -153,7 +169,8 @@ function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
                     I had a really fun time putting this together. I had difficulties with flips in the beginning, but than i got the hang of it and succeeded. I learned a lot of patience during this project.
                     </Typography>
                     <CardActions>
-                        <Button onClick={memoryLink}>GITHUB PAGE</Button>
+                        <Button variant='outlined' onClick={memoryLink}>LIVE DEMO</Button>
+                        <Button onClick={memoryLinkGit}>SOURCE CODE</Button>
                     </CardActions>
                 </CardContent>
         </Card>

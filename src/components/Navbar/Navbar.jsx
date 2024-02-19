@@ -1,4 +1,5 @@
 import React from "react";
+import './Navbar.css'
 
 export const Navbar = ({logo}) => {
 
@@ -6,12 +7,12 @@ const navbarStyle ={
   display: "flex",
   justifyContent:"space-between",
   paddingRight: "0.5em",
-  marginBottom: '10em'
 }
 const logoStyle = {
-  maxWidth: '12em',
-  maxHeight: '8em',
-  marginLeft: '1.5em'
+  maxWidth: '10em',
+  maxHeight: '7em',
+  marginLeft: '1.5em',
+  marginTop: '1em'
 }
 
 const liStyle = {
@@ -19,16 +20,19 @@ const liStyle = {
   flexDirection: "column",
   listStyleType: "none",
   padding: "20px",
-  gap: "20px",
+  gap: "20px"
 }
 
 const aStyle = {
   color: "white",
-  fontSize: "clamp(15px, 8vw, 60px)",
+  fontSize: "clamp(5px, 8vw, 60px)",
   fontFamily: "montserrat",
   fontWeight: 200,
   fontStyle: "normal",
-  textDecoration: "none"
+  textDecoration: "none",
+
+  display: 'inline-block',
+  position: 'relative'
 }
 
 
