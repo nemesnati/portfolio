@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material'
 
 
-function Projects() {
+function Projects({spaceInvader, burgerLand, rickAndMorty, memory}) {
 
     const h1Style = {
         fontSize: "clamp(55px, 9vw, 200px)",
@@ -93,7 +93,7 @@ function Projects() {
             <CardMedia component="img"
         alt="space invader"
         height="140"
-        src="src/assets/space_invader.png"/>
+        src={spaceInvader}/>
                 <CardContent>
                     <Typography style={fontStyle}>
                         SPACE INVADER
@@ -110,7 +110,7 @@ function Projects() {
              <CardMedia component="img"
         alt="burger land"
         height="140"
-        src="src/assets/burgerland.png"/>
+        src={burgerLand}/>
                  <CardContent>
                     <Typography style={fontStyle}>
                         BURGER LAND - TEAM WEBSHOP PROJECT
@@ -127,7 +127,7 @@ function Projects() {
             <CardMedia component="img"
         alt="rick and morty"
         height="140"
-        src="src/assets/rickandmorty.png"/>
+        src={rickAndMorty}/>
                 <CardContent>
                 <Typography style={fontStyle}>
                     RICK AND MORTY DATABASE
@@ -144,7 +144,7 @@ function Projects() {
             <CardMedia component="img"
         alt="memory game"
         height="140"
-        src="src/assets/memory.png"/>
+        src={memory}/>
                 <CardContent>
                     <Typography style={fontStyle}>
                         MEMORY GAME

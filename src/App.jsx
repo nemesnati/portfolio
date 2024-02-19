@@ -15,6 +15,12 @@ import firebase from './assets/firebase.png'
 import sass from './assets/sass.svg'
 import postman from './assets/postman.svg'
 import cv from './assets/cv.png'
+import spaceInvader from './assets/space_invader.png'
+import rickAndMorty from './assets/rickandmorty.png'
+import burgerLand from './assets/burgerland.png'
+import memory from './assets/memory.png'
+import nemesNataliaCv from './assets/natalianemescv.pdf'
+
 
 function App() {
 
@@ -28,10 +34,10 @@ function App() {
      <About me={me} css={css} figma={figma} html={html} js={js} react={react} firebase={firebase} sass={sass} postman={postman}/>
     </div>
     <div className={style.projects}>
-    <Projects/>
+    <Projects spaceInvader={spaceInvader} burgerLand={burgerLand} rickAndMorty={rickAndMorty} memory={memory}/>
     </div>
     <div className={style.contact}>
-      <Contact cv={cv}/>
+      <Contact cv={cv} nemesNataliaCv={nemesNataliaCv}/>
     </div>
     </>
   )
