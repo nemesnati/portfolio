@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
-function Contact({cv, nemesNataliaCv}) {
+function Contact({cv, nemesCv}) {
     const aStyle = {
         color: "white",
         fontSize: "clamp(40px, 4vw, 70px)",
@@ -72,7 +72,7 @@ function Contact({cv, nemesNataliaCv}) {
                     </a>
                 </li>
                 <li style={liStyle}>
-                    <a href={nemesNataliaCv} style={aStyle}>
+                    <a href={nemesCv} style={aStyle}>
                         <img src={cv} alt="cv" style={cvStyle}/>
                     </a>
                 </li>

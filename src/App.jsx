@@ -19,7 +19,7 @@ import spaceInvader from './assets/space_invader.png'
 import rickAndMorty from './assets/rickandmorty.png'
 import burgerLand from './assets/burgerland.png'
 import memory from './assets/memory.png'
-import nemesNataliaCv from './assets/natalianemescv.pdf'
+import nemesCv from './assets/natalianemescv.pdf'
 
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
     <Projects spaceInvader={spaceInvader} burgerLand={burgerLand} rickAndMorty={rickAndMorty} memory={memory}/>
     </div>
     <div className={style.contact}>
-      <Contact cv={cv} nemesNataliaCv={nemesNataliaCv}/>
+      <Contact cv={cv} nemesCv={nemesCv}/>
     </div>
     </>
   )
